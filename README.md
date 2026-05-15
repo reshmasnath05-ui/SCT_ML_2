@@ -104,4 +104,4 @@ Visualized:
 - Perform deeper customer behavior analysis
 
 
-Machine Learning Intern at SkillCraft Technology
+
