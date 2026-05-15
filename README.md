@@ -1,24 +1,36 @@
 # SCT_ML_2
 
+
 # Customer Segmentation using K-Means Clustering
 
-![Project Banner](images/project_summary.png)
-
 ## Overview
-This project performs customer segmentation using the K-Means Clustering algorithm. Customers are grouped based on their **Annual Income** and **Spending Score** to identify meaningful purchasing behavior patterns.
+This project performs Customer Segmentation using the K-Means Clustering algorithm. The goal is to group customers based on their Annual Income and Spending Score to identify meaningful purchasing patterns and business insights.
+
+---
+
+## Objective
+- Segment customers into different groups based on purchasing behavior
+- Analyze customer spending habits
+- Help businesses improve targeted marketing strategies
 
 ---
 
 ## Features
-- Data preprocessing and visualization
-- Elbow Method to determine optimal clusters
+- Data preprocessing and exploration
+- Elbow Method for optimal cluster selection
 - K-Means clustering implementation
 - Cluster visualization and centroid analysis
+- Business insight generation from customer segments
 
 ---
 
 ## Dataset
-Mall Customers Dataset
+The project uses the **Mall Customers Dataset**, which contains:
+- Customer ID
+- Gender
+- Age
+- Annual Income (k$)
+- Spending Score (1–100)
 
 ---
 
@@ -28,44 +40,19 @@ Mall Customers Dataset
 - NumPy
 - Matplotlib
 - Scikit-learn
+- Jupyter Notebook
 
 ---
 
-# Results
-
-## 1. Customer Segmentation
-
-![Customer Segmentation](images/cluster_visualization.png)
-
-Customers were successfully segmented into **5 distinct groups** based on their spending behavior and annual income.
-
----
-
-## 2. Cluster Centers
-
-![Cluster Centers](images/cluster_centers.png)
-
-The black X marks represent the centroids of each customer cluster.
-
----
-
-## 3. Elbow Method
-
-![Elbow Method](images/elbow_method.png)
-
-The Elbow Method was used to determine the optimal number of clusters (**K = 5**).
-
----
-
-# Project Structure
+## Project Structure
 
 ```bash
 SCT_ML_2/
 │── data/
-│   └── Mall_Customers.csv
+│   └── mall_customers.csv
 │
 │── notebooks/
-│   └── TASK-2-KMeans-Clustering.ipynb
+│   └── customer_segmentation_kmeans.ipynb
 │
 │── images/
 │   ├── cluster_visualization.png
@@ -77,3 +64,65 @@ SCT_ML_2/
 │── requirements.txt
 │── LICENSE
 │── .gitignore
+```
+
+---
+
+## Methodology
+
+### 1. Data Preprocessing
+- Imported dataset
+- Selected relevant features
+- Checked for missing values
+
+### 2. Finding Optimal Clusters
+The Elbow Method was used to determine the optimal number of clusters.
+
+### 3. K-Means Clustering
+Applied K-Means algorithm to segment customers into 5 distinct groups.
+
+### 4. Visualization
+Visualized:
+- Customer clusters
+- Cluster centroids
+- Elbow curve
+
+---
+
+## Results
+- Successfully segmented customers into 5 groups
+- Identified customer spending patterns
+- Generated insights useful for targeted marketing and customer engagement
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/SCT_ML_2.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+## Future Improvements
+- Deploy using Streamlit or Gradio
+- Add interactive dashboards
+- Use advanced clustering algorithms
+- Perform deeper customer behavior analysis
+
+
+Machine Learning Intern at SkillCraft Technology
